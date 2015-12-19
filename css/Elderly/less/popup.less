@@ -1,0 +1,99 @@
+.loginmask
+{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    background: #000;
+}
+#addOther-popup
+{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 100%;
+
+    display: none;
+
+    width: 50%;
+    height: 100%;
+
+    background: #fff;
+}
+*html #addOther-popup
+{
+    position: absolute;
+    //top: expression(eval(document.documentElement.scrollTop));
+}
+#addOther-box
+{
+
+    width: 90%;
+    margin: 100px auto;
+    overflow-y: auto;
+    max-height:70%;
+}
+
+.back-home
+{
+    font-size: 22px;
+    line-height: 50px;
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in;
+       -moz-transition: all .3s ease-in;
+         -o-transition: all .3s ease-in;
+            transition: all .3s ease-in;
+    text-align: center;
+    color: #fff;
+    background: #629A0B;
+}
+.back-home:hover
+{
+    background-color: #629A0B;
+}
+.order-btn{
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+    height: 50px;
+    a{
+      display: inline-block;
+      font-size: 22px;
+      padding: 10px 20px;
+      margin-left: 10px;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 5px;
+      background-color: #629A0B;
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #7BBD15), to(#629A0B));
+      color: #fff;
+      border-color: #446D03;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+    }
+}
+
+
+.l-dish-tag{
+  padding: 16px;
+}
+::selection{background:#6bc30d;color:#fff;}
+::-moz-selection{background:#6bc30d;color:#fff;}
+::-webkit-selection{background:#6bc30d;color:#fff;}
+::-webkit-scrollbar{width:10px;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;transition:all 0.2s ease-out;}
+::-webkit-scrollbar-button{display:none;}
+::-webkit-scrollbar-track{background: #FFF;}
+::-webkit-scrollbar-thumb{background: #4D9E03;border-radius:5px;-webkit-border-radius:5px;}
+::-webkit-scrollbar-thumb:active{background:#555;}
