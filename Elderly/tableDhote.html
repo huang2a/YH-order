@@ -34,10 +34,23 @@
     margin-top: -10px;
     color: #ff6600;
    }
-  </style>
+   .mbsc-control{
+        border-radius: 2px;
+        border: #B8AA96 solid 1px;
+        width: 100px;
+        line-height: 35px;
+        height: 35px;
+        font-size: 18px;
+        color: #6B5E45;
+        background: url(../images/Elderly/icon-down.png) 74px 13px no-repeat;
+        margin-right: 12px;
+        overflow: hidden;
+        text-indent: 4px;
+   }
+</style>
 </head>
 <body>
-<div class="container">
+<div class="container pd60">
     <div class="header bg-haeder">
         <a class="u-logo" href="">长者个人中心</a>
     </div> <!-- end header -->
@@ -53,11 +66,14 @@
                 <ul>
                     <li class="u-sidebar1"><a href="tableDhote.html">我的包餐</a></li>
                     <li class="u-sidebar2"><a href="AdditionalMeal.html">额外点餐</a></li>
-                    <li class="u-sidebar3"><a href="dailyOrder.html">每日订单</a></li>
+                    <li class="u-sidebar3"><a href="">每日订单</a></li>
                     <li class="u-sidebar4"><a href="">我的订单</a></li>
                     <li class="u-sidebar5"><a href="">已有服务</a></li>
                     <li class="u-sidebar6"><a href="">我的待付费</a></li>
-                    <li class="u-sidebar7"><a href="">通知</a></li>
+                    <li class="u-sidebar7"><a href="notice.html">通知</a></li>
+                    <li class="u-sidebar8"><a href="notice.html">服务确认</a></li>
+                    <li class="u-sidebar9"><a href="healthDate.html">健康数据</a></li>
+                    <li class="u-sidebar10"><a href="usercenter.html">个人中心</a></li>
                 </ul>
             </div>
             <div class="l-details-box l-right">
@@ -74,6 +90,17 @@
                         <a class="u-label u-green mr8 mb16 fontz18" href="">夹心饼干</a>
                     </div>
                     <div class="l-right l-btn-box">
+                        <span class="">
+                            <select name="product" id="product1">
+                                <option value="饭堂1">饭堂1</option>
+                                <option value="饭堂2">饭堂2</option>
+                                <option value="饭堂3">饭堂3</option>
+                                <option value="饭堂4">饭堂4</option>
+                                <option value="饭堂5">饭堂5</option>
+                                <option value="饭堂6">饭堂6</option>
+                                <option value="饭堂6">饭堂6</option>
+                            </select>
+                        </span>
                         <a class="u-btn u-btn-h" href="">停餐</a>
                        <!--  <a class="u-btn u-btn-c" href="">恢复</a>
                         <a class="u-btn u-btn-l" href="">立即下单</a> -->
@@ -100,6 +127,17 @@
                         <a class="u-label u-gray mr8 fontz18" href="##" disabled>糯米鸡</a>
                     </div>
                     <div class="l-right l-btn-box">
+                        <span class="">
+                            <select name="product" id="product2">
+                                <option value="饭堂1">饭堂1</option>
+                                <option value="饭堂2">饭堂2</option>
+                                <option value="饭堂3">饭堂3</option>
+                                <option value="饭堂4">饭堂4</option>
+                                <option value="饭堂5">饭堂5</option>
+                                <option value="饭堂6">饭堂6</option>
+                                <option value="饭堂6">饭堂6</option>
+                            </select>
+                        </span>
                         <a class="u-btn u-btn-c" href="">恢复</a>
                     </div>
                 </div>
@@ -118,6 +156,17 @@
                         <a class="u-label u-gray mr8 fontz18" href="##" disabled>糯米鸡</a>
                     </div>
                     <div class="l-right l-btn-box">
+                        <span class="">
+                            <select name="product" id="product3">
+                                <option value="饭堂1">饭堂1</option>
+                                <option value="饭堂2">饭堂2</option>
+                                <option value="饭堂3">饭堂3</option>
+                                <option value="饭堂4">饭堂4</option>
+                                <option value="饭堂5">饭堂5</option>
+                                <option value="饭堂6">饭堂6</option>
+                                <option value="饭堂6">饭堂6</option>
+                            </select>
+                        </span>
                         <a class="u-btn u-btn-h" href="">停餐</a>
                     </div>
                 </div>
@@ -137,32 +186,34 @@
                         <td height="108">五谷杂粮粥</td>
                         <td>12.00</td>
                         <td>3</td>
-                        <td>15.00</td>
+                        <td class="fontc-red fontz24">￥15.00</td>
                         <td><a class="u-btn u-btn-h" href="">删除</a></td>
                       </tr>
                       <tr>
                         <td height="108">五谷杂粮粥</td>
                         <td>12.00</td>
                         <td>3</td>
-                        <td>15.00</td>
+                        <td class="fontc-red fontz24">￥15.00</td>
                         <td><a class="u-btn u-btn-h" href="">删除</a></td>
                       </tr>
                       <tr>
                         <td height="108">五谷杂粮粥</td>
                         <td>12.00</td>
                         <td>3</td>
-                        <td>15.00</td>
+                        <td class="fontc-red fontz24">￥15.00</td>
                         <td><a class="u-btn u-btn-h" href="">删除</a></td>
                       </tr>
                     </table>
-                    <div class="content ptb35 textc">
-                        <span  class="fontc-red fontz24 lh42">数量：11 总价：￥124.00</span><a class="u-btn u-btn-l ml20" href="confirmOrder.html">立即下单</a>
-                    </div>
                 </div>
             </div>
         </div>
     </div> <!-- end content -->
 </div> <!-- end container -->
+<div class="fixed-nav">
+    <div class="content textc">
+        <span  class="fontc-red fontz24 lh42">数量：11 总价：￥124.00</span><a class="u-btn u-btn-l ml20" href="confirmOrder.html">立即下单</a>
+    </div>
+</div>
 <div class="loginmask"></div>
 <div id="addOther-popup">
     <div class="back-home">返回</div>
@@ -247,6 +298,14 @@
 <script type="text/javascript" src="../js/Elderly/mobiscroll.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
+      /*表单选择器*/
+  $('#product1,#product2,#product3').mobiscroll().select({
+      theme: 'mobiscroll',  // Specify theme like: theme: 'ios' or omit setting to use default
+      lang: 'zh',
+      display: 'modal',
+      minWidth: 200
+  });
+
   var now = new Date();
   $('.getdate').mobiscroll().date({
       theme: 'mobiscroll',
